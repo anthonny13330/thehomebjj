@@ -4,16 +4,16 @@ const CONFIG = {
   whatsapp: '351000000000',            // número com indicativo, sem + nem espaços
   phoneLabel: '+351 000 000 000',
   email: 'ola@thehomebjj.pt',
-  instagram: '@thehomebjj',
-  address: 'Rua Exemplo, 123 — Cidade',
+  instagram: '@thehome.bjj',
+  address: 'Largo da Lagoa 15F, 2795-116 Lisboa',
 };
 
 /* Horários de exemplo — substituir pelos reais */
 const SCHEDULE = {
   'Seg': [['07:00','Jiu-Jitsu Adultos','Todos os níveis','Gi'],['18:30','Kids (6–12)','Turma infantil','Kids'],['20:00','Jiu-Jitsu Adultos','Fundamentos','Gi']],
-  'Ter': [['12:30','No-Gi / Grappling','Treino ao almoço','No-Gi'],['19:00','Primeiros Passos','Para iniciantes','Iniciantes'],['20:15','Equipa de Competição','Sparring','Competição']],
+  'Ter': [['12:30','No-Gi / Grappling','Treino ao almoço','No-Gi'],['19:00','Primeiros Passos','Para iniciantes','Iniciantes'],['20:15','No-Gi / Grappling','Treino intenso','No-Gi']],
   'Qua': [['07:00','Jiu-Jitsu Adultos','Todos os níveis','Gi'],['18:30','Kids (6–12)','Turma infantil','Kids'],['20:00','Jiu-Jitsu Adultos','Avançado','Gi']],
-  'Qui': [['12:30','No-Gi / Grappling','Treino ao almoço','No-Gi'],['19:00','Primeiros Passos','Para iniciantes','Iniciantes'],['20:15','Equipa de Competição','Sparring','Competição']],
+  'Qui': [['12:30','No-Gi / Grappling','Treino ao almoço','No-Gi'],['19:00','Primeiros Passos','Para iniciantes','Iniciantes'],['20:15','No-Gi / Grappling','Treino intenso','No-Gi']],
   'Sex': [['18:30','Kids (6–12)','Turma infantil','Kids'],['20:00','Open Mat','Treino livre','Livre']],
   'Sáb': [['10:00','Jiu-Jitsu Adultos','Todos os níveis','Gi'],['11:30','Open Mat','Treino livre','Livre']],
   'Dom': [],
@@ -26,11 +26,13 @@ document.documentElement.classList.add('js');
 
 /* ---------- Logótipo: H → casa ---------- */
 const LOGO = `
-  <circle class="lg-ring" cx="60" cy="60" r="54" pathLength="1"/>
-  <polyline class="lg-roof" points="22,54 60,20 98,54" pathLength="1"/>
-  <line class="lg-l" x1="36" y1="40" x2="36" y2="98" pathLength="1"/>
-  <line class="lg-r" x1="84" y1="40" x2="84" y2="98" pathLength="1"/>
-  <line class="lg-bar" x1="36" y1="69" x2="84" y2="69" pathLength="1"/>
+  <circle class="lg-ring" cx="60" cy="60" r="57"/>
+  <polyline class="lg-roof" points="20,58 60,22 100,58" pathLength="1"/>
+  <line class="lg-tbar" x1="28" y1="34" x2="92" y2="34" pathLength="1"/>
+  <line class="lg-stem" x1="60" y1="34" x2="60" y2="64" pathLength="1"/>
+  <line class="lg-l" x1="38" y1="66" x2="38" y2="98" pathLength="1"/>
+  <line class="lg-r" x1="82" y1="66" x2="82" y2="98" pathLength="1"/>
+  <line class="lg-bar" x1="38" y1="82" x2="82" y2="82" pathLength="1"/>
   <rect class="lg-door" x="50" y="68" width="20" height="30" rx="2"/>
   <circle class="lg-knob" cx="65" cy="84" r="1.8"/>`;
 $$('svg.logo').forEach(s => (s.innerHTML = LOGO));
